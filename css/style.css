@@ -120,8 +120,33 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
 
+.logo {
+    width: auto;
+    height: 24px;
+    align-self: center;
+}
 
+.navbar {
+    margin-top: -20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 68px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
