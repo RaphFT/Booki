@@ -179,10 +179,18 @@ header {
 }
 
 /****** INFOGROUP ***********/
+
+.infogroup {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; /* Espacement uniforme entre les éléments */
+}
+
 /****** HEADLINE ***********/
 
 .headline {
-    margin: 30px 0 30px;
+    margin-top: 10px;
+    
 }
 .headline h2 {
     font-weight: 700;
@@ -193,7 +201,7 @@ header {
 .headline p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 0;
+    line-height: 0; /* Augmenter un peu l'espace */
 }
 
 /****** SEARCHBAR ***********/
@@ -207,7 +215,6 @@ header {
 form {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 label {
@@ -257,7 +264,59 @@ button {
 
 /****** FILTRES ***********/
 
+.filter {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
 
+.filterTitle {
+    display: flex-start;
+}
+
+.filterButton {
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filterButton:hover {
+    background-color: #DEEBFF;
+}
+
+.filterIcons {
+    padding-right: 5px;
+}
+
+/****** INFOBAR ***********/
+
+.infobar {
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;  /* Centre horizontalement */
+    align-items: center;  /* Centre verticalement */
+    font-size: 12px; /* Ajuste la taille de l'icône si besoin */
+    margin-right: 10px;
+}
+
+.infobar p {
+    align-items: center;
+    display: flex;
+    margin: 0;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
