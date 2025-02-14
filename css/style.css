@@ -74,8 +74,69 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    box-sizing: border-box;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.hebergements-cards a {
+    text-decoration: none;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+.hebergements-cards img {
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.moreinfo {
+    margin-top: 35px;
+    font-weight: 700;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -259,7 +320,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 /****** FILTRES ***********/
@@ -316,7 +376,9 @@ button {
     align-items: center;
     display: flex;
     margin: 0;
+    margin-bottom: 40px;
 }
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -356,5 +418,8 @@ button {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .hebergements-cards a {
+        flex: 1 1 100%; /* 1 carte par ligne */
+        max-width: 100%;
+    }
 }
