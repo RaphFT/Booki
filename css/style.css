@@ -75,20 +75,24 @@ a {
 .hebergements {
     width: 65%;
     box-sizing: border-box;
+    border: 2px solid red;
 }
 
 .hebergements-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid red;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 30px; 
     justify-content: space-between;
-    margin-top: 35px;
+    border: 2px solid red;
 }
 
 .hebergements-cards a {
@@ -134,8 +138,9 @@ a {
 }
 
 .moreinfo {
-    margin-top: 35px;
+    margin-top: 30px;
     font-weight: 700;
+    border: 2px solid red;
 }
 /****** Populaires ***********/
 .populaires {
@@ -182,12 +187,83 @@ a {
     margin-bottom: 5px;
 }
 
+/****** ACTIVITIES ***********/
+
+.activities {
+    width: 95%;
+    padding: 30px;
+    gap: 30px;
+    border: 2px solid red;
+    margin-top: 30px;
+}
+
+.activities-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+    margin-bottom: 30px;
+}
+
+.activities-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: space-between;
+    min-height: auto;
+    border: 2px solid blue;
+}
+
+.activities-cards a {
+    text-decoration: none;
+    flex: 1 1 calc(25% - 30px);
+    box-sizing: border-box;
+    height: auto;
+    border: 2px solid green;
+    
+}
+
+.activities-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 0;
+    height: 100%;
+    border: 2px solid violet;
+}
+
+.activities-cards img {
+    width: 100%;
+    flex-grow: 1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activities-cards .card-content {
+    width: 100%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 2px solid violet;
+}
+
+.activities-cards .card-title {
+    height: 10%;
+    align-items: center;
+}
+
+
 /****** HEADER ***********/
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    border: 2px solid red;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -245,18 +321,20 @@ header {
     display: flex;
     flex-direction: column;
     gap: 35px; /* Espacement uniforme entre les éléments */
+    border: 2px solid red;
+    margin-bottom: 35px;
 }
 
 /****** HEADLINE ***********/
 
 .headline {
-    margin-top: 10px;
-    
+    border: 2px solid red;
 }
 .headline h2 {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2;
+    margin-top: 0;
 }
 
 .headline p {
@@ -271,6 +349,7 @@ header {
     display: flex;
     justify-content: left;
     align-items: center;
+    border: 2px solid red;
 }
 
 form {
@@ -328,10 +407,13 @@ button {
    display: flex;
    align-items: center;
    gap: 15px;
+   border: 2px solid red;
 }
 
 .filterTitle {
-    display: flex-start;
+    display: flex;
+    margin: 0;
+    border: 2px solid red;
 }
 
 .filterButton {
@@ -343,6 +425,7 @@ button {
     padding-bottom: 10px;
     font-size: 17px;
     font-weight: 700;
+    border: 2px solid red;
 }
 
 .filterButton:hover {
@@ -358,6 +441,7 @@ button {
 .infobar {
     display: flex;
     align-items: center;
+    border: 2px solid red;
 }
 
 .fa-info {
@@ -376,8 +460,48 @@ button {
     align-items: center;
     display: flex;
     margin: 0;
-    margin-bottom: 40px;
 }
+
+/****** FOOTER ***********/
+
+footer {
+    background-color: #F2F2F2;
+    border: 1px solid red;
+    margin-top: 35px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet de s’adapter aux petits écrans */
+    height: 139px;
+}
+
+.footer-column {
+    flex: 1; /* Répartit l'espace également */
+    min-width: 200px; /* Largeur minimale pour éviter qu'ils deviennent trop petits */
+}
+
+.footer-column h3 {
+    font-size: 1.2em;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -413,6 +537,30 @@ button {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activities-cards .card {
+        height: 80%; /* Ajuste la hauteur des cartes pour qu'elles soient plus compactes */
+        min-height: 250px; /* Définit une hauteur minimale pour éviter les cartes trop petites */
+    }
+
+    .activities-cards img {
+        height: 60%; /* L'image prend 60% de la hauteur de la carte */
+        object-fit: cover; /* Pour éviter les déformations */
+    }
+
+    .activities-cards .card-content {
+        height: 40%; /* Le contenu prend le reste de l’espace */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .activities-cards .card-title {
+        font-size: 1rem; /* Réduit légèrement la taille du titre */
+        margin-bottom: 5px; /* Diminue l'espace sous le titre */
+        text-align: left;
     }
 }
 
