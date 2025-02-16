@@ -190,7 +190,6 @@ a {
 /****** ACTIVITIES ***********/
 
 .activities {
-    width: 95%;
     padding: 30px;
     gap: 30px;
     border: 2px solid red;
@@ -247,7 +246,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
-    border: 2px solid violet;
+    border: 2px solid green;
 }
 
 .activities-cards .card-title {
@@ -466,10 +465,9 @@ button {
 
 footer {
     background-color: #F2F2F2;
-    border: 1px solid red;
     margin-top: 35px;
     margin-bottom: 0;
-    width: 100%;
+    border: 2px solid red;
 }
 
 .footer-container {
@@ -477,15 +475,20 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap; /* Permet de s’adapter aux petits écrans */
     height: 139px;
+    padding: 20px;
+   
 }
 
 .footer-column {
-    flex: 1; /* Répartit l'espace également */
-    min-width: 200px; /* Largeur minimale pour éviter qu'ils deviennent trop petits */
+    flex: 1;
+    min-width: 200px; 
+    border: 2px solid red;
 }
 
 .footer-column h3 {
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
 }
 
 .footer-column ul {
@@ -494,12 +497,14 @@ footer {
 }
 
 .footer-column ul li {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .footer-column ul li a {
     text-decoration: none;
     color: #333;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -539,10 +544,19 @@ footer {
         font-size: 13px;
     }
 
+    .activities-cards {
+        height: 265px;
+    }
+
+    .activities-cards a {
+        height: 260px;
+    }
+
     .activities-cards .card {
         height: 80%; /* Ajuste la hauteur des cartes pour qu'elles soient plus compactes */
         min-height: 250px; /* Définit une hauteur minimale pour éviter les cartes trop petites */
     }
+
 
     .activities-cards img {
         height: 60%; /* L'image prend 60% de la hauteur de la carte */
