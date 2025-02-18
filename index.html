@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- ====================================================
+         Meta et Liens externes
+         ==================================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
+    
+    <!-- Préconnexion pour Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     >
+    
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,11 +26,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     >
-    <link rel="stylesheet" href="./css/style.css" >
+    
+    <!-- Feuille de style personnalisée -->
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
     <div class="main-container">
+      <!-- ====================================================
+           HEADER
+           ==================================================== -->
       <header>
         <img src="./images/logo/Booki.png" alt="Logo Booki" class="logo">
         <nav class="navbar">
@@ -31,12 +45,22 @@
           </ul>
         </nav>
       </header>
+      
+      <!-- ====================================================
+           CONTENU PRINCIPAL
+           ==================================================== -->
       <main>
+        <!-- -------------------------
+             Infogroup : Headline, Searchbar, Filtres et Infobar
+             ------------------------- -->
         <section class="infogroup">
+          <!-- Headline -->
           <div class="headline">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
           </div>
+          
+          <!-- Searchbar -->
           <div class="searchbar">
             <form method="get" action="#">
               <label for="site-search">
@@ -54,6 +78,8 @@
               </button>
             </form>
           </div>
+          
+          <!-- Filtres -->
           <div class="filter">
             <h3 class="filterTitle">Filtres</h3>
             <div class="filterButton">
@@ -73,19 +99,26 @@
               Nos pépites
             </div>
           </div>
+          
+          <!-- Infobar -->
           <div class="infobar">
             <p>
-              <i class="fa-solid fa-info"></i> Plus de 500 logements sont
-              disponibles dans cette ville
+              <i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles dans cette ville
             </p>
           </div>
         </section>
+        
+        <!-- -------------------------
+             Hébergements et Populaires
+             ------------------------- -->
         <div class="hebergements-and-populaires">
+          <!-- Hébergements -->
           <section class="hebergements">
             <div class="hebergements-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
             <div class="hebergements-cards">
+              <!-- Carte Hébergement 1 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -104,15 +137,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Hébergement 2 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -131,15 +162,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Hébergement 3 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -158,15 +187,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Hébergement 4 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -185,15 +212,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Hébergement 5 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -212,15 +237,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Hébergement 6 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -239,26 +262,29 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
             </div>
+            <!-- Lien pour afficher plus d'hébergements -->
             <div class="moreinfo">
               <a href="#">Afficher plus</a>
             </div>
           </section>
+          
+          <!-- -------------------------
+               Populaires
+               ------------------------- -->
           <section class="populaires">
             <div class="populaires-title">
               <h2 class="section-title">Les plus populaires</h2>
               <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
             </div>
             <div class="populaires-cards">
+              <!-- Carte Populaire 1 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -277,15 +303,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Populaire 2 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -294,9 +318,7 @@
                   >
                   <div class="card-content">
                     <div class="card-txt">
-                      <h3 class="card-title">
-                        Chambres d’hôtes Au cœur de l’eau
-                      </h3>
+                      <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
                       <p class="card-subtitle">
                         Nuit à partir de 71<span class="euro">€</span>
                       </p>
@@ -306,15 +328,13 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
                 </article>
               </a>
+              <!-- Carte Populaire 3 -->
               <a href="#">
                 <article class="card">
                   <img
@@ -333,10 +353,7 @@
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                       <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                      <i
-                        class="fa-xs fa-solid fa-star neutral-star"
-                        aria-hidden="true"
-                      ></i>
+                      <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                       <span class="sr-only">Note de 4 sur 5</span>
                     </div>
                   </div>
@@ -345,11 +362,16 @@
             </div>
           </section>
         </div>
+        
+        <!-- -------------------------
+             Activités
+             ------------------------- -->
         <section class="activities">
           <div class="activities-title">
             <h2 class="section-title">Activités à Marseille</h2>
           </div>
           <div class="activities-cards">
+            <!-- Activité 1 -->
             <a href="#">
               <article class="card">
                 <img
@@ -363,6 +385,7 @@
                 </div>
               </article>
             </a>
+            <!-- Activité 2 -->
             <a href="#">
               <article class="card">
                 <img
@@ -376,6 +399,7 @@
                 </div>
               </article>
             </a>
+            <!-- Activité 3 -->
             <a href="#">
               <article class="card">
                 <img
@@ -389,6 +413,7 @@
                 </div>
               </article>
             </a>
+            <!-- Activité 4 -->
             <a href="#">
               <article class="card">
                 <img
@@ -405,8 +430,13 @@
           </div>
         </section>
       </main>
+      
+      <!-- ====================================================
+           FOOTER
+           ==================================================== -->
       <footer>
         <div class="footer-container">
+          <!-- Colonne À propos -->
           <div class="footer-column">
             <h3>À propos</h3>
             <ul>
@@ -415,6 +445,7 @@
               <li><a href="#">Données et confidentialité</a></li>
             </ul>
           </div>
+          <!-- Colonne Nos hébergements -->
           <div class="footer-column">
             <h3>Nos hébergements</h3>
             <ul>
@@ -422,6 +453,7 @@
               <li><a href="#">Proposer votre hôtel</a></li>
             </ul>
           </div>
+          <!-- Colonne Assistance -->
           <div class="footer-column">
             <h3>Assistance</h3>
             <ul>
