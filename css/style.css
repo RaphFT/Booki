@@ -231,11 +231,11 @@
     gap: 20px;
   }
   
-  .filterTitle {
+  .filter-title {
     margin: 0;
   }
   
-  .filterButton {
+  .filter-button {
     display: flex;
     border: 2px solid #D9D9D9;
     border-radius: 20px;
@@ -248,7 +248,7 @@
     background-color: #DEEBFF;
   }
   
-  .filterIcons {
+  .filter-icons {
     padding-right: 10px;
   }
   
@@ -527,7 +527,7 @@
       column-gap: 10px;
     }
 
-    .filterTitle {
+    .filter-title {
       width: 100%;
       margin-bottom: 0;
     }
@@ -721,16 +721,16 @@
       column-gap: 10px;
     }
 
-    .filterIcons {
+    .filter-icons {
       padding: 0;
     }
 
-    .filterTitle {
+    .filter-title {
       width: 100%;
       margin-bottom: 0;
     }
 
-    .filterButton {
+    .filter-button {
       margin: 0;
       flex: 1 1 calc(50% - 80px);
       max-width: 40%;
