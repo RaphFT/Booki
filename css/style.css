@@ -144,7 +144,7 @@
      HEADLINE
      ========================================================================== */
 
-  .headline h2 {
+  .headline h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2;
@@ -192,10 +192,14 @@
   input[type="text"] {
     border: 1px solid #F2F2F2;
     height: 47px;
-    font-size: 14px;
     width: 150px;
-    font-weight: 700;
     text-align: center;
+  }
+
+  input::placeholder {
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
   }
   
   button {
